@@ -5,7 +5,7 @@
   </view>
   <view class="main">
     <picker class="start_picker" mode="date" value="{{date}}" bindchange="bindDateChange">
-    <input class="input_picker" placeholder="点击设置开始时间" value="{{date}}">
+    <input class="input_picker" 	disabled="true" placeholder="点击设置开始时间" value="{{date}}">
     </input>
     </picker>
     <view class="row row_forward">
