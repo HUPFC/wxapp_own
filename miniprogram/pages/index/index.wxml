@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="title">日期推算</view>
+  </view>
+  <view class="main">
+    <picker class="start_picker" mode="date" value="{{date}}" bindchange="bindDateChange">
+    <input class="input_picker" placeholder="点击设置开始时间" value="{{date}}">
+    </input>
+    </picker>
+    <view class="row row_forward">
+      <input class="forward_day" model:value="{{middle}}" />
+      <view class="ml-15">天</view>
+      <view class="ml-50 checkbox_pre forward_{{forward}}" bindtap="clickForward">
+        <view class="{{forward==0?'on':''}}" data-forward="0">前</view>
+        <view class="{{forward==1?'on':''}}" data-forward="1">后</view>
+      </view>
+    </view>
+    <button class="row" type="default" bindtap="caculate">计算结果</button>
+    <view class="row">{{result}}</view>
+  </view>
+  
+</view>

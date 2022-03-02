@@ -1,0 +1,19 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+.ml-5{
+  margin-left: 5px;
+}
+
+.ml-15{
+  margin-left: 15px;
+}
+.ml-50{
+  margin-left: 50px;
+}
